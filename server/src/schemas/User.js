@@ -10,16 +10,12 @@ module.exports = mongoose.model('User',
       type: [String],
       default: []
     },
-    address: {
-      type: String,
+    lat: {
+      type: Number,
       required: true,
     },
-    city: {
-      type: String,
-      required: true,
-    },
-    postalCode: {
-      type: String,
+    long: {
+      type: Number,
       required: true,
     },
     ownGift: {
