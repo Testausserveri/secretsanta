@@ -108,7 +108,7 @@ struct LocationView: View {
                 alignment: .topLeading
             )
             .padding([.leading, .trailing], 15)
-            .navigationBarTitle(Text("Your Interests"))
+            .navigationBarTitle(Text("Your Location"))
     }
     
 }
