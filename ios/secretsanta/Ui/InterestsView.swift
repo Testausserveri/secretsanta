@@ -28,11 +28,12 @@ struct InterestsView: View {
                 
                     
                 Spacer()
+                
                 HStack(alignment: .center) {
-                    
                     NavigationLink(destination: LocationView()){
                         Text("Continue").frame(minWidth: 0, maxWidth: .infinity)
                     }
+                    
                     .frame(maxWidth: .infinity)
                     .buttonStyle(.borderedProminent)
                     .controlSize(.large)
@@ -43,9 +44,7 @@ struct InterestsView: View {
                     maxWidth: .infinity,
                     alignment: .topLeading
                 )
-                
-                
-                
+
             }
             .frame(
                 maxWidth: .infinity,
