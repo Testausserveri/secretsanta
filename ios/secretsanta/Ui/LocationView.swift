@@ -10,7 +10,7 @@ import MapKit
 import CoreLocationUI
 
 struct LocationMap: View {
-    @StateObject var locationManager = LocationManager()
+    @StateObject var locationManager: LocationManager
     
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 37.334_900,
@@ -73,10 +73,10 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 struct LocationView: View {
     @State private var text = ""
     @EnvironmentObject var appState: AppState
-
+    @StateObject var locationManager = LocationManager()
     var body: some View {
             VStack(alignment: .leading) {
-                LocationMap()
+                LocationMap(locationManager: locationManager)
                     .frame(maxHeight: 300)
                 
                 Text("The Wolt Reindeer will pick up your gift and deliver to this address.")
@@ -91,7 +91,15 @@ struct LocationView: View {
                 
                 Spacer()
                 HStack(alignment: .center) {
-                    Button(action: {appState.setupComplete = true}) {
+                    Button(action: {
+                        
+                        appState.lat = locationManager.location?.latitude
+                        appState.lon = locationManager.location?.longitude
+                        
+                        
+                        register(interests: appState.interests, textFieldContent: "\(text)", lat: appState.lat ?? 0, lon: appState.lon ?? 0)
+                        appState.setupComplete = true
+                    }) {
                         Text("Continue").frame(minWidth: 0, maxWidth: .infinity)
                     }
                     .frame(maxWidth: .infinity)

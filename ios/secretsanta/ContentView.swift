@@ -13,6 +13,12 @@ class AppState: ObservableObject {
     @Published var madeGift = false
     @Published var interests:[ChipModel] = []
     
+    @Published var lon :Double? = 0
+    @Published var lat :Double? = 0
+    
+    //UserId for authentication because prototype
+    @Published var user :String = ""
+    
     //Prototype
     @Published var orderPickuped = false
     @Published var giftPickuped = false

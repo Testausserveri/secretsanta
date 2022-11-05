@@ -13,6 +13,7 @@ struct RegisteredView: View {
     
     @State private var showConfirmDialog = false
     @EnvironmentObject var appState: AppState
+    
     var body: some View {
             VStack(alignment: .leading) {
                 Text("You are now registered for City Secret Santa 2022!")
@@ -23,7 +24,7 @@ struct RegisteredView: View {
                         .padding(.vertical)
                     
                     VStack(alignment: .leading) {
-                        Text("They are interested in:")
+                        Text("They are interested in: \(appState.user)")
                         
                         ForEach(secretSantaInterests, id: \.self) { interest in
                             Text("•\t\(interest)")
