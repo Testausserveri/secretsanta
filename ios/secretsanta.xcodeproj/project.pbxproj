@@ -13,8 +13,8 @@
 		73C201AF2916072A0082412C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C201AE2916072A0082412C /* Assets.xcassets */; };
 		73C201B22916072A0082412C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C201B12916072A0082412C /* Preview Assets.xcassets */; };
 		73C201B929162F920082412C /* InterestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C201B829162F920082412C /* InterestsView.swift */; };
+		78102F282916844300C77927 /* RegisteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78102F272916844300C77927 /* RegisteredView.swift */; };
 		C9B5E4C82916536500F622B2 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = C9B5E4C72916536500F622B2 /* WrappingHStack */; };
-		C9B5E4CA291653CA00F622B2 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4C9291653CA00F622B2 /* SetupView.swift */; };
 		C9B5E4CD291653E000F622B2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4CC291653E000F622B2 /* WelcomeView.swift */; };
 		C9B5E4D0291655C900F622B2 /* ChipsHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4CF291655C900F622B2 /* ChipsHolderView.swift */; };
 		C9B5E4D2291655E800F622B2 /* ChipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4D1291655E800F622B2 /* ChipModel.swift */; };
@@ -29,7 +29,6 @@
 		73C201AE2916072A0082412C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73C201B12916072A0082412C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73C201B829162F920082412C /* InterestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsView.swift; sourceTree = "<group>"; };
-		C9B5E4C9291653CA00F622B2 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
 		C9B5E4CC291653E000F622B2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		C9B5E4CF291655C900F622B2 /* ChipsHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsHolderView.swift; sourceTree = "<group>"; };
 		C9B5E4D1291655E800F622B2 /* ChipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipModel.swift; sourceTree = "<group>"; };
@@ -90,8 +89,8 @@
 				C9B5E4CE291655B700F622B2 /* Chips */,
 				73C201B829162F920082412C /* InterestsView.swift */,
 				73B80CFB29165D7200FBA487 /* LocationView.swift */,
-				C9B5E4C9291653CA00F622B2 /* SetupView.swift */,
 				C9B5E4CC291653E000F622B2 /* WelcomeView.swift */,
+				78102F272916844300C77927 /* RegisteredView.swift */,
 			);
 			path = Ui;
 			sourceTree = "<group>";
@@ -188,7 +187,6 @@
 				73C201AD291607290082412C /* ContentView.swift in Sources */,
 				73B80CFC29165D7200FBA487 /* LocationView.swift in Sources */,
 				73C201B929162F920082412C /* InterestsView.swift in Sources */,
-				C9B5E4CA291653CA00F622B2 /* SetupView.swift in Sources */,
 				73C201AB291607290082412C /* secretsantaApp.swift in Sources */,
 				C9B5E4D2291655E800F622B2 /* ChipModel.swift in Sources */,
 			);

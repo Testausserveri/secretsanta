@@ -7,13 +7,21 @@
 
 import SwiftUI
 
+class AppState: ObservableObject {
+    @Published var setupComplete = false
+}
 
 struct ContentView: View {
+    @StateObject var appState = AppState()
     var body: some View {
-        VStack {
-            
-        }.sheet(isPresented: .constant(true)) {
-            SetupView()
+        NavigationView {
+            VStack {
+                if (appState.setupComplete) {
+                    // TODO
+                } else {
+                    WelcomeView()
+                }
+            }
         }
     }
 }
