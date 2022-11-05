@@ -13,9 +13,7 @@ struct InterestsView: View {
     
     @State private var chips = [ChipModel(chipName: "Cats"), ChipModel(chipName: "Makeup"), ChipModel(chipName: "Hardware"), ChipModel(chipName: "Gaming"), ChipModel(chipName: "Sauna"), ChipModel(chipName: "Bakery"), ChipModel(chipName: "Wine"), ChipModel(chipName: "Brooms")]
 
-    private var continueDisabled: Bool {
-        return chips.filter{$0.selected}.count < 3
-    }
+    @State private var continueDisabled = true
     
     var body: some View {
             VStack(alignment: .leading) {
@@ -24,12 +22,15 @@ struct InterestsView: View {
 
                 Text("Choose 3 to 5 interests.")
                 
-                ChipsHolderView(chips: $chips)
+                ChipsHolderView(chips: $chips, callback: {
+                    continueDisabled = chips.filter{$0.selected}.count < 3
+                })
                 
                     
                 Spacer()
                 HStack(alignment: .center) {
-                    Button(action: { }) {
+                    
+                    NavigationLink(destination: LocationView()){
                         Text("Continue").frame(minWidth: 0, maxWidth: .infinity)
                     }
                     .frame(maxWidth: .infinity)

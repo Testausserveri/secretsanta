@@ -9,21 +9,24 @@ import SwiftUI
 
 
 struct ChipView: View {
-    var chip: ChipModel
-    @State var isSelected: Bool
+    @Binding var chip: ChipModel
+    let callback: () -> Void
+    var allowSelect: Bool
     
     var body: some View {
-        if (isSelected) {
+        if (chip.selected) {
             Button(chip.chipName) {
-                print("clic")
-                isSelected.toggle()
+                chip.selected = false
+                callback()
             }
             .buttonStyle(.borderedProminent)
             .clipShape(Capsule())
         } else {
             Button(chip.chipName) {
-                print("clic2")
-                isSelected.toggle()
+                if (allowSelect) {
+                    chip.selected = true
+                    callback()
+                }
             }
             .buttonStyle(.bordered)
             .clipShape(Capsule())
@@ -33,7 +36,7 @@ struct ChipView: View {
 
 struct ChipView_Previews: PreviewProvider {
     static var previews: some View {
-        ChipView(chip: ChipModel(chipName: "testi", selected: false), isSelected: false)
-        ChipView(chip: ChipModel(chipName: "testi", selected: true), isSelected: true)
+        ChipView(chip: .constant(ChipModel(chipName: "testi", selected: false)), callback: {}, allowSelect: true)
+        ChipView(chip: .constant(ChipModel(chipName: "testi", selected: true)), callback: {}, allowSelect: true)
     }
 }

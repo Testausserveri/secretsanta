@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    @State private var showSetupSheet = false
     var body: some View {
         VStack() {
             Text("You haven’t yet signed up for **City Secret Santa 2022**. Click below to get started!")
@@ -15,12 +16,16 @@ struct WelcomeView: View {
             Spacer()
             Image("reindeer-gift")
             Spacer()
-            NavigationLink(destination: InterestsView()) {
+            Button(action: {showSetupSheet = true}) {
                 Text("Get started")
             }
             .frame(width: nil)
             .buttonStyle(.borderedProminent)
-            .controlSize(.large)
+            .controlSize(.large).sheet(isPresented: $showSetupSheet) {
+                NavigationView {
+                    InterestsView()
+                }
+            }
             
         }
         .navigationBarTitle(Text("City Secret Santa"))

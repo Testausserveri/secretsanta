@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct ChipModel: Identifiable {
+struct ChipModel: Codable, Hashable, Identifiable {
     static func == (lhs: ChipModel, rhs: ChipModel) -> Bool {
         return lhs.id == rhs.id && lhs.selected == rhs.selected
     }
@@ -16,5 +16,5 @@ struct ChipModel: Identifiable {
     var id: UUID = UUID()
 
     let chipName: String
-    @State var selected = false
+    var selected = false
 }
