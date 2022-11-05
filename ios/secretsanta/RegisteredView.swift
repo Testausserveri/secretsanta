@@ -78,7 +78,7 @@ struct RegisteredView: View {
                 maxHeight: .infinity,
                 alignment: .topLeading
             )
-            .padding([.leading, .trailing], 15)
+            .padding([.leading, .trailing], 20)
             .navigationBarTitle(Text("City Secret Santa"))
         }
 }
