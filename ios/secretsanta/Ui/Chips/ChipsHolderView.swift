@@ -10,13 +10,18 @@ import SwiftUI
 
 struct ChipsHolderView: View {
     @Binding var chips: [ChipModel]
+    let callback: () -> Void
+    var allowSelect: Bool {
+        return chips.filter{$0.selected}.count < 5
+    }
+    
     var body: some View {
         var width = CGFloat.zero
         var height = CGFloat.zero
         return GeometryReader { geo in
                 ZStack(alignment: .topLeading, content: {
-                    ForEach(chips) { chipData in
-                        ChipView(chip: chipData, isSelected: chipData.selected)
+                    ForEach($chips) { chipData in
+                        ChipView(chip: chipData, callback: callback, allowSelect: allowSelect)
                         .padding(.all, 5)
                         .alignmentGuide(.leading) { dimension in  
                             if (abs(width - dimension.width) > geo.size.width) {
@@ -59,6 +64,6 @@ struct ChipsHolderView_Previews: PreviewProvider {
             ChipModel(chipName: "sd"),
             ChipModel(chipName: "sd"),
             ChipModel(chipName: "asdadasdasd"),
-        ]))
+        ]), callback: {})
     }
 }
