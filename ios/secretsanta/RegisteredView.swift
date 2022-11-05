@@ -16,27 +16,35 @@ struct RegisteredView: View {
     var body: some View {
             VStack(alignment: .leading) {
                 Text("You are now registered for City Secret Santa 2022!")
-                Spacer()
+                    .padding(.bottom)
                 Text("You are the Secret Santa for the following person:")
                 VStack() {
                     Text("**Pasi**")
+                        .padding(.vertical)
                     
                     VStack(alignment: .leading) {
                         Text("They are interested in:")
+                        
                         ForEach(secretSantaInterests, id: \.self) { interest in
                             Text("•\t\(interest)")
                         }
+                        
+                        
                     }
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    
                 }
                 .padding()
-                .frame(minWidth: 0, maxWidth: .infinity)
                 .background(Color(.systemGray6))
                 .cornerRadius(15)
-                
+                Spacer()
                 Image("gift-box")
-                    .resizable()
-            
+                .resizable()
+                .scaledToFit()
+                .frame(minWidth: 0, maxWidth: .infinity)
+                Spacer()
                 Text("You have 3 days 12 hours to make the present and order pickup.")
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     .multilineTextAlignment(.center)
                 
                 HStack(alignment: .center) {
