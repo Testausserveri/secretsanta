@@ -1,0 +1,12 @@
+{
+  "name": "junction22",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@novu/node": "^0.8.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.1"
+  }
+}
