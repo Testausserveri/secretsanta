@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		738FA1DD29169432007FC28D /* WaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738FA1DC29169432007FC28D /* WaitingView.swift */; };
 		73B80CFC29165D7200FBA487 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B80CFB29165D7200FBA487 /* LocationView.swift */; };
 		73C201AB291607290082412C /* secretsantaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C201AA291607290082412C /* secretsantaApp.swift */; };
 		73C201AD291607290082412C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C201AC291607290082412C /* ContentView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		738FA1DC29169432007FC28D /* WaitingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingView.swift; sourceTree = "<group>"; };
 		73B80CFB29165D7200FBA487 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		73C201A7291607290082412C /* secretsanta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = secretsanta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C201AA291607290082412C /* secretsantaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secretsantaApp.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				C9B5E4CB291653CF00F622B2 /* Ui */,
 				73C201AA291607290082412C /* secretsantaApp.swift */,
 				78A6084729168DDA00273D65 /* RegisteredView.swift */,
+				738FA1DC29169432007FC28D /* WaitingView.swift */,
 				73C201AC291607290082412C /* ContentView.swift */,
 				73C201AE2916072A0082412C /* Assets.xcassets */,
 				73C201B02916072A0082412C /* Preview Content */,
@@ -198,6 +201,7 @@
 			files = (
 				C9B5E4D42916562D00F622B2 /* ChipView.swift in Sources */,
 				C9B5E4D6291689EA00F622B2 /* MainView.swift in Sources */,
+				738FA1DD29169432007FC28D /* WaitingView.swift in Sources */,
 				C9B5E4D0291655C900F622B2 /* ChipsHolderView.swift in Sources */,
 				C9B5E4CD291653E000F622B2 /* WelcomeView.swift in Sources */,
 				73C201AD291607290082412C /* ContentView.swift in Sources */,
