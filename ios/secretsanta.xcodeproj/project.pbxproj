@@ -23,6 +23,9 @@
 		C9B5E4D42916562D00F622B2 /* ChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4D32916562D00F622B2 /* ChipView.swift */; };
 		C9B5E4D6291689EA00F622B2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4D5291689EA00F622B2 /* MainView.swift */; };
 		C9B5E4D929168AA200F622B2 /* StatusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4D829168AA200F622B2 /* StatusCard.swift */; };
+		C9B5E4DE29169D9800F622B2 /* picture.json in Resources */ = {isa = PBXBuildFile; fileRef = C9B5E4DD29169D9800F622B2 /* picture.json */; };
+		C9B5E4E12916A05F00F622B2 /* GIFPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4E02916A05F00F622B2 /* GIFPlayerView.swift */; };
+		C9B5E4E32916A07F00F622B2 /* SwiftGIFPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4E22916A07F00F622B2 /* SwiftGIFPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		C9B5E4D32916562D00F622B2 /* ChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipView.swift; sourceTree = "<group>"; };
 		C9B5E4D5291689EA00F622B2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C9B5E4D829168AA200F622B2 /* StatusCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCard.swift; sourceTree = "<group>"; };
+		C9B5E4DD29169D9800F622B2 /* picture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = picture.json; sourceTree = "<group>"; };
+		C9B5E4E02916A05F00F622B2 /* GIFPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFPlayerView.swift; sourceTree = "<group>"; };
+		C9B5E4E22916A07F00F622B2 /* SwiftGIFPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGIFPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 		73C201A9291607290082412C /* secretsanta */ = {
 			isa = PBXGroup;
 			children = (
+				C9B5E4DD29169D9800F622B2 /* picture.json */,
 				C9B5E4CB291653CF00F622B2 /* Ui */,
 				73C201AA291607290082412C /* secretsantaApp.swift */,
 				78A6084729168DDA00273D65 /* RegisteredView.swift */,
@@ -97,6 +104,7 @@
 		C9B5E4CB291653CF00F622B2 /* Ui */ = {
 			isa = PBXGroup;
 			children = (
+				C9B5E4DF2916A05100F622B2 /* GifPlayer */,
 				C9B5E4D729168A2D00F622B2 /* Components */,
 				C9B5E4CE291655B700F622B2 /* Chips */,
 				73C201B829162F920082412C /* InterestsView.swift */,
@@ -124,6 +132,15 @@
 				C9B5E4D829168AA200F622B2 /* StatusCard.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		C9B5E4DF2916A05100F622B2 /* GifPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C9B5E4E02916A05F00F622B2 /* GIFPlayerView.swift */,
+				C9B5E4E22916A07F00F622B2 /* SwiftGIFPlayerView.swift */,
+			);
+			path = GifPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C201B22916072A0082412C /* Preview Assets.xcassets in Resources */,
+				C9B5E4DE29169D9800F622B2 /* picture.json in Resources */,
 				73C201AF2916072A0082412C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +231,9 @@
 				73B80CFC29165D7200FBA487 /* LocationView.swift in Sources */,
 				73C201B929162F920082412C /* InterestsView.swift in Sources */,
 				78A6084829168DDA00273D65 /* RegisteredView.swift in Sources */,
+				C9B5E4E32916A07F00F622B2 /* SwiftGIFPlayerView.swift in Sources */,
 				73C201AB291607290082412C /* secretsantaApp.swift in Sources */,
+				C9B5E4E12916A05F00F622B2 /* GIFPlayerView.swift in Sources */,
 				C9B5E4D2291655E800F622B2 /* ChipModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

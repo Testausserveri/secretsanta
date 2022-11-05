@@ -16,6 +16,8 @@ struct TakePictureView: View {
                 Text("Submit a picture to showcase your gift!")
                 
                 Spacer()
+                SwiftGIFPlayerView(gifName: "take-picture")
+                Spacer()
                 
                 HStack(alignment: .center) {
                     Button(action: { }) {

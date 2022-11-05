@@ -27,6 +27,11 @@ router.post('/trigger_delivery', async (req, res) => {
     },
     payload: {
 
+    },
+    overrides: {
+      apns: {
+        
+      }
     }
   });
 
