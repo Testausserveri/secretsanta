@@ -8,7 +8,8 @@
 import SwiftUI
 
 class AppState: ObservableObject {
-    @Published var setupComplete = false
+    @Published var setupComplete = true
+    @Published var madeOrder = true
 }
 
 struct ContentView: View {
@@ -17,12 +18,12 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 if (appState.setupComplete) {
-                    // TODO
+                    MainView()
                 } else {
                     WelcomeView()
                 }
             }
-        }
+        }.environmentObject(appState)
     }
 }
 
