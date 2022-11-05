@@ -27,7 +27,7 @@ struct MainView: View {
                     GiftStatusCard()
                 }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .bottom)
             }.task( {
-                try? await Task.sleep(nanoseconds: 3_000_000_000)
+                try? await Task.sleep(nanoseconds: 6_000_000_000)
                 appState.giftPickuped = true
             })
         } else if (appState.madeOrder && appState.orderPickuped) {
@@ -39,7 +39,7 @@ struct MainView: View {
                     StatusCard()
                 }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .bottom)
             }.task({
-                try? await Task.sleep(nanoseconds: 3_000_000_000)
+                try? await Task.sleep(nanoseconds: 6_000_000_000)
                 appState.orderPickuped = true
             })
         } else if (appState.madeOrder == false) {

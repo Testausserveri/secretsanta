@@ -56,7 +56,7 @@ struct RegisteredView: View {
                     .buttonStyle(.borderedProminent)
                     .controlSize(.large)
                     .confirmationDialog(
-                        "Is your gift ready and wrapped? The Reindeer will arrive in approx. 20 minutes.",
+                        "Is your gift ready and wrapped? The Reindeer will arrive in approx. 35 minutes.",
                         isPresented: $showConfirmDialog, titleVisibility: .visible) {
                             Button {
                                 appState.madeOrder = true

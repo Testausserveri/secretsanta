@@ -17,7 +17,7 @@ struct GiftStatusCard: View {
             Text("Estimated time of arrival: \(self.counter1) min")
                 .font(.subheadline)
                 .onAppear {
-                    self.runCounter(counter: self.$counter1, start: counter1, end: 0, speed: 0.087)
+                    self.runCounter(counter: self.$counter1, start: counter1, end: 0, speed: 0.174)
                 }
         }.padding(25).frame(minWidth: 0, maxWidth: .infinity).background(Color(.systemGray6)).cornerRadius(18).padding()
     }
