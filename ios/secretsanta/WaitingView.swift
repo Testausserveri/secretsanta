@@ -49,7 +49,7 @@ struct WaitingView: View {
                     .controlSize(.large)
                     .disabled(continueDisabled)
                     .confirmationDialog(
-                        "Are you ready to redeem your gift? The gift will arrive in approx. 35 minutes.",
+                        "Are you ready to redeem your gift? The gift will arrive in approx. 35 minutes.\(appState.user)",
                         isPresented: $showConfirmDialog, titleVisibility: .visible) {
                             Button {
                                 appState.madeGift = true

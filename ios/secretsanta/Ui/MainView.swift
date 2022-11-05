@@ -17,6 +17,7 @@ struct MainView: View {
     )
     @EnvironmentObject var appState: AppState
     var body: some View {
+        
         if(appState.madeGift && appState.giftPickuped) {
             TakePictureView()
         } else if(appState.madeGift && appState.giftPickuped == false) {

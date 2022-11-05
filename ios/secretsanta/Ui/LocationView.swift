@@ -97,8 +97,9 @@ struct LocationView: View {
                         appState.lon = locationManager.location?.longitude
                         
                         
-                        register(interests: appState.interests, textFieldContent: "\(text)", lat: appState.lat ?? 0, lon: appState.lon ?? 0)
+                        register(appState: appState, interests: appState.interests, textFieldContent: "\(text)", lat: appState.lat ?? 0, lon: appState.lon ?? 0)
                         appState.setupComplete = true
+
                     }) {
                         Text("Continue").frame(minWidth: 0, maxWidth: .infinity)
                     }

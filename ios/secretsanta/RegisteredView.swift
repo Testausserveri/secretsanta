@@ -24,7 +24,7 @@ struct RegisteredView: View {
                         .padding(.vertical)
                     
                     VStack(alignment: .leading) {
-                        Text("They are interested in: \(appState.user)")
+                        Text("They are interested in:")
                         
                         ForEach(secretSantaInterests, id: \.self) { interest in
                             Text("•\t\(interest)")

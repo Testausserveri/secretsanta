@@ -3,6 +3,8 @@ import Foundation
 import FoundationNetworking
 #endif
 
+
+
 struct user: Codable, Hashable {
     var name: String
     var interests: [String]
@@ -11,8 +13,7 @@ struct user: Codable, Hashable {
     var long: Double
 }
 
-func register(interests: [ChipModel], textFieldContent: String, lat: Double, lon: Double) {
-    var semaphore = DispatchSemaphore (value: 0)
+func register(appState: AppState, interests: [ChipModel], textFieldContent: String, lat: Double, lon: Double) {
     
     let parameters = user(name: "Kalevi", interests: interests.map {$0.chipName}, instructions: textFieldContent, lat: lat, long: lon )
     let encoder = JSONEncoder()
@@ -20,27 +21,30 @@ func register(interests: [ChipModel], textFieldContent: String, lat: Double, lon
     let data = try! encoder.encode(parameters)
     let postData = data
     
-    //print(String(data: postData, encoding: .utf8)!)
-    
-    var request = URLRequest(url: URL(string: "https://792b-2001-708-40-2003-af83-346a-793c-bb37.eu.ngrok.io/user/register")!,timeoutInterval: Double.infinity)
+    var request = URLRequest(url: URL(string: "https://junction.mikroni.fi/user/register")!,timeoutInterval: Double.infinity)
     request.addValue("application/json", forHTTPHeaderField: "Content-Type")
     
     request.httpMethod = "POST"
     request.httpBody = postData
     
-    let task = URLSession.shared.dataTask(with: request) { data, response, error in
-        guard let data = data else {
-            print(String(describing: error))
-            semaphore.signal()
-            return
-        }
-        var data2: Data = Data(String(data: data, encoding: .utf8)!.utf8)
-        let json = try! JSONSerialization.jsonObject(with: data2, options: [])
-        
-        
-        semaphore.signal()
+    struct Reg: Decodable { // or Decodable
+        let success: Bool
+        let message: String
+        let user: String
     }
+
+    URLSession.shared.dataTask(with: request) { data, response, error in
+        if let data = data {
+            do {
+                
+                let arr = try JSONDecoder().decode(Reg.self, from: data)
+                
+                appState.user = arr.user
+              } catch let error {
+                 print(error)
+              }
+        }
+
+    }.resume()
     
-    task.resume()
-    semaphore.wait()
 }
