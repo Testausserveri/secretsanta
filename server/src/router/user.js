@@ -21,8 +21,9 @@ router.post('/register', async (req, res) => {
   const user = await User.create({
     name: req.body.name,
     interests: req.body.interests,
-    lat: parseInt(req.body.lat),
-    long: parseInt(req.body.long),
+    instructions: req.body.instructions,
+    lat: parseFloat(req.body.lat),
+    long: parseFloat(req.body.long),
   });
   if (firstNoPresent) {
     console.log(firstNoPresent)

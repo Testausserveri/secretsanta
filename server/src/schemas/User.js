@@ -11,12 +11,16 @@ module.exports = mongoose.model('User',
       default: []
     },
     lat: {
-      type: Number,
+      type: Schema.Types.Decimal128,
       required: true,
     },
     long: {
-      type: Number,
+      type: Schema.Types.Decimal128,
       required: true,
+    },
+    instructions: {
+      type: String,
+      default: ''
     },
     ownGift: {
       ref: 'Gift',
