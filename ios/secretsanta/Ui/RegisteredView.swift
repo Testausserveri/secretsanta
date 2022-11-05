@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RegisteredView: View {
-    private var secretSantaInterests = ["football", "comedy movies", ""]
+    private var secretSantaInterests = ["football", "comedy movies", "kebab roll"]
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
