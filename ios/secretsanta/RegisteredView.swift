@@ -8,25 +8,34 @@
 import SwiftUI
 
 struct RegisteredView: View {
-    private var secretSantaInterests = ["football", "comedy movies", "kebab roll"]
+    
+    @State private var secretSantaInterests: [String] = ["football", "comedy movies", "kebab roll", "liver box", "music"]
+    
     @State private var showConfirmDialog = false
     @EnvironmentObject var appState: AppState
     var body: some View {
             VStack(alignment: .leading) {
-                Text("You are now registered for City Secret Santa 2022!\n\nYou are the Secret Santa for the following person:")
-                
+                Text("You are now registered for City Secret Santa 2022!")
+                Spacer()
+                Text("You are the Secret Santa for the following person:")
                 VStack() {
                     Text("**Pasi**")
-                        .padding(.top)
-                    Text("They are interested in:\n- football\n- comedy movies\n- kebab roll\n- liver box")
-                        .padding(.bottom)
+                    
+                    VStack(alignment: .leading) {
+                        Text("They are interested in:")
+                        ForEach(secretSantaInterests, id: \.self) { interest in
+                            Text("•\t\(interest)")
+                        }
+                    }
                 }
+                .padding()
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .background(Color(.systemGray6))
                 .cornerRadius(15)
                 
                 Image("gift-box")
-                
+                    .resizable()
+            
                 Text("You have 3 days 12 hours to make the present and order pickup.")
                     .multilineTextAlignment(.center)
                 
