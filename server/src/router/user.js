@@ -102,6 +102,14 @@ router.post('/order_delivery', async (req, res) => {
   }
 })
 
+router.get('/interests', async (req, res) => {
+  if (!req.query.user) return res.status(401).json({ success: false, message: 'Not logged in'});
+  const user = await User.findOne({ _id: req.query.user });
+  if (!user) return res.status(400).json({ success: false, message: 'Invalid user' })
+  const userBuysTo = await User.findOne({ secretSanta: user._id });
+  res.json({ success: true, interests: userBuysTo.interests, name: userBuysTo.name.split(' ')[0] });
+})
+
 router.post('/calculate_price', async (req, res) => {
   // This is a prototype, so very high advanced authentication!
   if (!req.body.user) return res.status(401).json({ success: false, message: 'Not logged in' })
