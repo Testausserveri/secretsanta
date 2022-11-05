@@ -11,6 +11,8 @@
 		73C201AD291607290082412C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C201AC291607290082412C /* ContentView.swift */; };
 		73C201AF2916072A0082412C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C201AE2916072A0082412C /* Assets.xcassets */; };
 		73C201B22916072A0082412C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C201B12916072A0082412C /* Preview Assets.xcassets */; };
+		73C201B929162F920082412C /* InterestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C201B829162F920082412C /* InterestsView.swift */; };
+		73C201BC29163A270082412C /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 73C201BB29163A270082412C /* WrappingHStack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		73C201AC291607290082412C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		73C201AE2916072A0082412C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73C201B12916072A0082412C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		73C201B829162F920082412C /* InterestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73C201BC29163A270082412C /* WrappingHStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				73C201AA291607290082412C /* secretsantaApp.swift */,
 				73C201AC291607290082412C /* ContentView.swift */,
+				73C201B829162F920082412C /* InterestsView.swift */,
 				73C201AE2916072A0082412C /* Assets.xcassets */,
 				73C201B02916072A0082412C /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = secretsanta;
+			packageProductDependencies = (
+				73C201BB29163A270082412C /* WrappingHStack */,
+			);
 			productName = secretsanta;
 			productReference = 73C201A7291607290082412C /* secretsanta.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 73C2019E291607290082412C;
+			packageReferences = (
+				73C201BA29163A270082412C /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
 			productRefGroup = 73C201A8291607290082412C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C201AD291607290082412C /* ContentView.swift in Sources */,
+				73C201B929162F920082412C /* InterestsView.swift in Sources */,
 				73C201AB291607290082412C /* secretsantaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		73C201BA29163A270082412C /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		73C201BB29163A270082412C /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 73C201BA29163A270082412C /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 73C2019F291607290082412C /* Project object */;
 }
