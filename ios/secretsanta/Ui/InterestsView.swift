@@ -15,6 +15,8 @@ struct InterestsView: View {
 
     @State private var continueDisabled = true
     
+    @EnvironmentObject var appState: AppState
+    
     var body: some View {
             VStack(alignment: .leading) {
                 Text("This information will be given to the person sending you your gift.")
@@ -23,10 +25,10 @@ struct InterestsView: View {
                 Text("Choose 3 to 5 interests.")
                 
                 ChipsHolderView(chips: $chips, callback: {
+                    appState.interests = chips.filter{$0.selected}
                     continueDisabled = chips.filter{$0.selected}.count < 3
                 })
                 
-                    
                 Spacer()
                 
                 HStack(alignment: .center) {

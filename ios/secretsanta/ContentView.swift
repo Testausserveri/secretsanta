@@ -10,6 +10,7 @@ import SwiftUI
 class AppState: ObservableObject {
     @Published var setupComplete = false
     @Published var madeOrder = false
+    @Published var interests:[ChipModel] = []
 }
 
 struct ContentView: View {
