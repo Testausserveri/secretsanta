@@ -7,26 +7,23 @@
 
 import SwiftUI
 
+class AppState: ObservableObject {
+    @Published var setupComplete = false
+    @Published var madeOrder = false
+}
 
 struct ContentView: View {
+    @StateObject var appState = AppState()
     var body: some View {
         NavigationView {
-            VStack() {
-                Text("You haven’t yet signed up for **City Secret Santa 2022**. Click below to get started!")
-                    
-                Spacer()
-                Image("reindeer-gift")
-                Spacer()
-                Button("Get Started") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+            VStack {
+                if (appState.setupComplete) {
+                    MainView()
+                } else {
+                    WelcomeView()
                 }
-                .frame(width: nil)
-                .buttonStyle(.borderedProminent)
-                .controlSize(.large)
-                
             }
-            .navigationBarTitle(Text("City Secret Santa"))
-        }
+        }.environmentObject(appState)
     }
 }
 

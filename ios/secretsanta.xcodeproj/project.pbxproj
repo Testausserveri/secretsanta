@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		738FA1DD29169432007FC28D /* WaitingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738FA1DC29169432007FC28D /* WaitingView.swift */; };
+		73B80CFC29165D7200FBA487 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B80CFB29165D7200FBA487 /* LocationView.swift */; };
 		73C201AB291607290082412C /* secretsantaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C201AA291607290082412C /* secretsantaApp.swift */; };
 		73C201AD291607290082412C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C201AC291607290082412C /* ContentView.swift */; };
 		73C201AF2916072A0082412C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C201AE2916072A0082412C /* Assets.xcassets */; };
 		73C201B22916072A0082412C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73C201B12916072A0082412C /* Preview Assets.xcassets */; };
 		73C201B929162F920082412C /* InterestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C201B829162F920082412C /* InterestsView.swift */; };
-		73C201BC29163A270082412C /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 73C201BB29163A270082412C /* WrappingHStack */; };
+		78A6084829168DDA00273D65 /* RegisteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A6084729168DDA00273D65 /* RegisteredView.swift */; };
+		78C10BF82916970A0055AC12 /* TakePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C10BF72916970A0055AC12 /* TakePictureView.swift */; };
+		C9B5E4C82916536500F622B2 /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = C9B5E4C72916536500F622B2 /* WrappingHStack */; };
+		C9B5E4CD291653E000F622B2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4CC291653E000F622B2 /* WelcomeView.swift */; };
+		C9B5E4D0291655C900F622B2 /* ChipsHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4CF291655C900F622B2 /* ChipsHolderView.swift */; };
+		C9B5E4D2291655E800F622B2 /* ChipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4D1291655E800F622B2 /* ChipModel.swift */; };
+		C9B5E4D42916562D00F622B2 /* ChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4D32916562D00F622B2 /* ChipView.swift */; };
+		C9B5E4D6291689EA00F622B2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4D5291689EA00F622B2 /* MainView.swift */; };
+		C9B5E4D929168AA200F622B2 /* StatusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4D829168AA200F622B2 /* StatusCard.swift */; };
+		C9B5E4DE29169D9800F622B2 /* picture.json in Resources */ = {isa = PBXBuildFile; fileRef = C9B5E4DD29169D9800F622B2 /* picture.json */; };
+		C9B5E4E12916A05F00F622B2 /* GIFPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4E02916A05F00F622B2 /* GIFPlayerView.swift */; };
+		C9B5E4E32916A07F00F622B2 /* SwiftGIFPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B5E4E22916A07F00F622B2 /* SwiftGIFPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		738FA1DC29169432007FC28D /* WaitingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingView.swift; sourceTree = "<group>"; };
+		73B80CFB29165D7200FBA487 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		73C201A7291607290082412C /* secretsanta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = secretsanta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73C201AA291607290082412C /* secretsantaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secretsantaApp.swift; sourceTree = "<group>"; };
 		73C201AC291607290082412C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		73C201AE2916072A0082412C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73C201B12916072A0082412C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73C201B829162F920082412C /* InterestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsView.swift; sourceTree = "<group>"; };
+		78A6084729168DDA00273D65 /* RegisteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisteredView.swift; sourceTree = "<group>"; };
+		78C10BF72916970A0055AC12 /* TakePictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePictureView.swift; sourceTree = "<group>"; };
+		C9B5E4CC291653E000F622B2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		C9B5E4CF291655C900F622B2 /* ChipsHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsHolderView.swift; sourceTree = "<group>"; };
+		C9B5E4D1291655E800F622B2 /* ChipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipModel.swift; sourceTree = "<group>"; };
+		C9B5E4D32916562D00F622B2 /* ChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipView.swift; sourceTree = "<group>"; };
+		C9B5E4D5291689EA00F622B2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C9B5E4D829168AA200F622B2 /* StatusCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCard.swift; sourceTree = "<group>"; };
+		C9B5E4DD29169D9800F622B2 /* picture.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = picture.json; sourceTree = "<group>"; };
+		C9B5E4E02916A05F00F622B2 /* GIFPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFPlayerView.swift; sourceTree = "<group>"; };
+		C9B5E4E22916A07F00F622B2 /* SwiftGIFPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftGIFPlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73C201BC29163A270082412C /* WrappingHStack in Frameworks */,
+				C9B5E4C82916536500F622B2 /* WrappingHStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +81,12 @@
 		73C201A9291607290082412C /* secretsanta */ = {
 			isa = PBXGroup;
 			children = (
+				C9B5E4DD29169D9800F622B2 /* picture.json */,
+				C9B5E4CB291653CF00F622B2 /* Ui */,
 				73C201AA291607290082412C /* secretsantaApp.swift */,
+				78A6084729168DDA00273D65 /* RegisteredView.swift */,
+				738FA1DC29169432007FC28D /* WaitingView.swift */,
 				73C201AC291607290082412C /* ContentView.swift */,
-				73C201B829162F920082412C /* InterestsView.swift */,
 				73C201AE2916072A0082412C /* Assets.xcassets */,
 				73C201B02916072A0082412C /* Preview Content */,
 			);
@@ -70,6 +99,48 @@
 				73C201B12916072A0082412C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C9B5E4CB291653CF00F622B2 /* Ui */ = {
+			isa = PBXGroup;
+			children = (
+				C9B5E4DF2916A05100F622B2 /* GifPlayer */,
+				C9B5E4D729168A2D00F622B2 /* Components */,
+				C9B5E4CE291655B700F622B2 /* Chips */,
+				73C201B829162F920082412C /* InterestsView.swift */,
+				73B80CFB29165D7200FBA487 /* LocationView.swift */,
+				C9B5E4CC291653E000F622B2 /* WelcomeView.swift */,
+				C9B5E4D5291689EA00F622B2 /* MainView.swift */,
+				78C10BF72916970A0055AC12 /* TakePictureView.swift */,
+			);
+			path = Ui;
+			sourceTree = "<group>";
+		};
+		C9B5E4CE291655B700F622B2 /* Chips */ = {
+			isa = PBXGroup;
+			children = (
+				C9B5E4CF291655C900F622B2 /* ChipsHolderView.swift */,
+				C9B5E4D1291655E800F622B2 /* ChipModel.swift */,
+				C9B5E4D32916562D00F622B2 /* ChipView.swift */,
+			);
+			path = Chips;
+			sourceTree = "<group>";
+		};
+		C9B5E4D729168A2D00F622B2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C9B5E4D829168AA200F622B2 /* StatusCard.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C9B5E4DF2916A05100F622B2 /* GifPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				C9B5E4E02916A05F00F622B2 /* GIFPlayerView.swift */,
+				C9B5E4E22916A07F00F622B2 /* SwiftGIFPlayerView.swift */,
+			);
+			path = GifPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,7 +160,7 @@
 			);
 			name = secretsanta;
 			packageProductDependencies = (
-				73C201BB29163A270082412C /* WrappingHStack */,
+				C9B5E4C72916536500F622B2 /* WrappingHStack */,
 			);
 			productName = secretsanta;
 			productReference = 73C201A7291607290082412C /* secretsanta.app */;
@@ -120,7 +191,7 @@
 			);
 			mainGroup = 73C2019E291607290082412C;
 			packageReferences = (
-				73C201BA29163A270082412C /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+				C9B5E4C62916536500F622B2 /* XCRemoteSwiftPackageReference "WrappingHStack" */,
 			);
 			productRefGroup = 73C201A8291607290082412C /* Products */;
 			projectDirPath = "";
@@ -137,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73C201B22916072A0082412C /* Preview Assets.xcassets in Resources */,
+				C9B5E4DE29169D9800F622B2 /* picture.json in Resources */,
 				73C201AF2916072A0082412C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,9 +220,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B5E4D42916562D00F622B2 /* ChipView.swift in Sources */,
+				C9B5E4D6291689EA00F622B2 /* MainView.swift in Sources */,
+				738FA1DD29169432007FC28D /* WaitingView.swift in Sources */,
+				C9B5E4D0291655C900F622B2 /* ChipsHolderView.swift in Sources */,
+				C9B5E4CD291653E000F622B2 /* WelcomeView.swift in Sources */,
 				73C201AD291607290082412C /* ContentView.swift in Sources */,
+				78C10BF82916970A0055AC12 /* TakePictureView.swift in Sources */,
+				C9B5E4D929168AA200F622B2 /* StatusCard.swift in Sources */,
+				73B80CFC29165D7200FBA487 /* LocationView.swift in Sources */,
 				73C201B929162F920082412C /* InterestsView.swift in Sources */,
+				78A6084829168DDA00273D65 /* RegisteredView.swift in Sources */,
+				C9B5E4E32916A07F00F622B2 /* SwiftGIFPlayerView.swift in Sources */,
 				73C201AB291607290082412C /* secretsantaApp.swift in Sources */,
+				C9B5E4E12916A05F00F622B2 /* GIFPlayerView.swift in Sources */,
+				C9B5E4D2291655E800F622B2 /* ChipModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,12 +371,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = fi.testausserveri.secretsanta;
+				PRODUCT_BUNDLE_IDENTIFIER = fi.testatusserveri.secretsanta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -308,7 +393,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"secretsanta/Preview Content\"";
-				DEVELOPMENT_TEAM = H526985HLV;
+				DEVELOPMENT_TEAM = R7R98T4924;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -316,12 +401,13 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = fi.testausserveri.secretsanta;
+				PRODUCT_BUNDLE_IDENTIFIER = fi.testatusserveri.secretsanta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -353,7 +439,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		73C201BA29163A270082412C /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+		C9B5E4C62916536500F622B2 /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/dkk/WrappingHStack";
 			requirement = {
@@ -364,9 +450,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		73C201BB29163A270082412C /* WrappingHStack */ = {
+		C9B5E4C72916536500F622B2 /* WrappingHStack */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 73C201BA29163A270082412C /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			package = C9B5E4C62916536500F622B2 /* XCRemoteSwiftPackageReference "WrappingHStack" */;
 			productName = WrappingHStack;
 		};
 /* End XCSwiftPackageProductDependency section */
