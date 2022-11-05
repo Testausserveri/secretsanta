@@ -72,7 +72,8 @@ final class LocationManager: NSObject, ObservableObject, CLLocationManagerDelega
 
 struct LocationView: View {
     @State private var text = ""
-    
+    @EnvironmentObject var appState: AppState
+
     var body: some View {
             VStack(alignment: .leading) {
                 LocationMap()
@@ -90,7 +91,7 @@ struct LocationView: View {
                 
                 Spacer()
                 HStack(alignment: .center) {
-                    Button(action: { }) {
+                    Button(action: {appState.setupComplete = true}) {
                         Text("Continue").frame(minWidth: 0, maxWidth: .infinity)
                     }
                     .frame(maxWidth: .infinity)

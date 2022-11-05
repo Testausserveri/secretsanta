@@ -9,8 +9,9 @@ import SwiftUI
 
 struct RegisteredView: View {
     private var secretSantaInterests = ["football", "comedy movies", "kebab roll"]
+    @State private var showConfirmDialog = false
+    @EnvironmentObject var appState: AppState
     var body: some View {
-        NavigationView {
             VStack(alignment: .leading) {
                 Text("You are now registered for City Secret Santa 2022!\n\nYou are the Secret Santa for the following person:")
                 
@@ -30,12 +31,24 @@ struct RegisteredView: View {
                     .multilineTextAlignment(.center)
                 
                 HStack(alignment: .center) {
-                    Button(action: { }) {
+                    Button(action: {showConfirmDialog.toggle()}) {
                         Text("Order Pick Up").frame(minWidth: 0, maxWidth: .infinity)
                     }
                     .frame(maxWidth: .infinity)
                     .buttonStyle(.borderedProminent)
                     .controlSize(.large)
+                    .confirmationDialog(
+                        "Is your gift ready and wrapped? The Reindeer will arrive in approx. 20 minutes.",
+                        isPresented: $showConfirmDialog, titleVisibility: .visible) {
+                            Button {
+                                appState.madeOrder = true
+                            } label: {
+                                Text("Confirm order")
+                            }
+                            Button("Cancel", role: .cancel) {
+                                showConfirmDialog.toggle()
+                            }
+                    }
                     
                 }
                 .frame(
@@ -51,11 +64,12 @@ struct RegisteredView: View {
             .padding([.leading, .trailing], 15)
             .navigationBarTitle(Text("City Secret Santa"))
         }
-    }
 }
 
 struct RegisteredView_Previews: PreviewProvider {
     static var previews: some View {
-        RegisteredView()
+        NavigationView {
+            RegisteredView()
+        }
     }
 }

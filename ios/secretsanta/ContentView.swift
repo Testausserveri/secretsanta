@@ -8,8 +8,8 @@
 import SwiftUI
 
 class AppState: ObservableObject {
-    @Published var setupComplete = true
-    @Published var madeOrder = true
+    @Published var setupComplete = false
+    @Published var madeOrder = false
 }
 
 struct ContentView: View {
